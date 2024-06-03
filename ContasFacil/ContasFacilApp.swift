@@ -11,7 +11,10 @@ import SwiftUI
 struct ContasFacilApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                LoginView()
+            }
+            .toolbar(.hidden)
         }
     }
 }

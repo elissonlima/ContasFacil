@@ -8,17 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		3291CDD42BFD546000E4AE83 /* ContasFacilApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291CDD32BFD546000E4AE83 /* ContasFacilApp.swift */; };
-		3291CDD62BFD546000E4AE83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291CDD52BFD546000E4AE83 /* ContentView.swift */; };
 		3291CDD82BFD546100E4AE83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3291CDD72BFD546100E4AE83 /* Assets.xcassets */; };
 		3291CDDB2BFD546100E4AE83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3291CDDA2BFD546100E4AE83 /* Preview Assets.xcassets */; };
+		3291CDE42BFD54B500E4AE83 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291CDE32BFD54B500E4AE83 /* LoginView.swift */; };
+		3291CDE72BFD5CF400E4AE83 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291CDE62BFD5CF400E4AE83 /* Color.swift */; };
+		3291CDEA2BFD62E000E4AE83 /* BasicTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291CDE92BFD62E000E4AE83 /* BasicTextField.swift */; };
+		3291CDEC2BFD685300E4AE83 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291CDEB2BFD685300E4AE83 /* ActionButton.swift */; };
+		3291CDEE2BFD690200E4AE83 /* LabelledDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291CDED2BFD690200E4AE83 /* LabelledDivider.swift */; };
+		3291CDF42BFD71E100E4AE83 /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291CDF32BFD71E100E4AE83 /* ImageButton.swift */; };
+		3291CDF62BFD901900E4AE83 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291CDF52BFD901900E4AE83 /* SignUpView.swift */; };
+		32D3B0212C0D7AB100F32B46 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 32D3B0202C0D7AB100F32B46 /* AWSCognitoAuthPlugin */; };
+		32D3B0232C0D7AB100F32B46 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 32D3B0222C0D7AB100F32B46 /* Amplify */; };
+		32EB60432C0BE3C2004DB70D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EB60422C0BE3C2004DB70D /* SignUpViewModel.swift */; };
+		32EB60452C0BE803004DB70D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EB60442C0BE803004DB70D /* String.swift */; };
+		32EB60472C0BF226004DB70D /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EB60462C0BF226004DB70D /* Binding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3291CDD02BFD546000E4AE83 /* ContasFacil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContasFacil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3291CDD32BFD546000E4AE83 /* ContasFacilApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContasFacilApp.swift; sourceTree = "<group>"; };
-		3291CDD52BFD546000E4AE83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3291CDD72BFD546100E4AE83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3291CDDA2BFD546100E4AE83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3291CDE32BFD54B500E4AE83 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3291CDE62BFD5CF400E4AE83 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		3291CDE92BFD62E000E4AE83 /* BasicTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTextField.swift; sourceTree = "<group>"; };
+		3291CDEB2BFD685300E4AE83 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		3291CDED2BFD690200E4AE83 /* LabelledDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelledDivider.swift; sourceTree = "<group>"; };
+		3291CDF32BFD71E100E4AE83 /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
+		3291CDF52BFD901900E4AE83 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		32EB60422C0BE3C2004DB70D /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		32EB60442C0BE803004DB70D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		32EB60462C0BF226004DB70D /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32D3B0212C0D7AB100F32B46 /* AWSCognitoAuthPlugin in Frameworks */,
+				32D3B0232C0D7AB100F32B46 /* Amplify in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +73,11 @@
 		3291CDD22BFD546000E4AE83 /* ContasFacil */ = {
 			isa = PBXGroup;
 			children = (
+				3291CDE82BFD62C500E4AE83 /* Components */,
+				3291CDE52BFD5CE400E4AE83 /* Extensions */,
+				3291CDE22BFD549600E4AE83 /* ViewModel */,
+				3291CDE12BFD548A00E4AE83 /* View */,
 				3291CDD32BFD546000E4AE83 /* ContasFacilApp.swift */,
-				3291CDD52BFD546000E4AE83 /* ContentView.swift */,
 				3291CDD72BFD546100E4AE83 /* Assets.xcassets */,
 				3291CDD92BFD546100E4AE83 /* Preview Content */,
 			);
@@ -65,6 +90,44 @@
 				3291CDDA2BFD546100E4AE83 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3291CDE12BFD548A00E4AE83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3291CDE32BFD54B500E4AE83 /* LoginView.swift */,
+				3291CDF52BFD901900E4AE83 /* SignUpView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3291CDE22BFD549600E4AE83 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				32EB60422C0BE3C2004DB70D /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3291CDE52BFD5CE400E4AE83 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3291CDE62BFD5CF400E4AE83 /* Color.swift */,
+				32EB60442C0BE803004DB70D /* String.swift */,
+				32EB60462C0BF226004DB70D /* Binding.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3291CDE82BFD62C500E4AE83 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3291CDE92BFD62E000E4AE83 /* BasicTextField.swift */,
+				3291CDEB2BFD685300E4AE83 /* ActionButton.swift */,
+				3291CDED2BFD690200E4AE83 /* LabelledDivider.swift */,
+				3291CDF32BFD71E100E4AE83 /* ImageButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +146,10 @@
 			dependencies = (
 			);
 			name = ContasFacil;
+			packageProductDependencies = (
+				32D3B0202C0D7AB100F32B46 /* AWSCognitoAuthPlugin */,
+				32D3B0222C0D7AB100F32B46 /* Amplify */,
+			);
 			productName = ContasFacil;
 			productReference = 3291CDD02BFD546000E4AE83 /* ContasFacil.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +178,9 @@
 				Base,
 			);
 			mainGroup = 3291CDC72BFD546000E4AE83;
+			packageReferences = (
+				32D3B01F2C0D7AB100F32B46 /* XCRemoteSwiftPackageReference "amplify-swift" */,
+			);
 			productRefGroup = 3291CDD12BFD546000E4AE83 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +207,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3291CDD62BFD546000E4AE83 /* ContentView.swift in Sources */,
+				3291CDE42BFD54B500E4AE83 /* LoginView.swift in Sources */,
+				3291CDE72BFD5CF400E4AE83 /* Color.swift in Sources */,
+				32EB60452C0BE803004DB70D /* String.swift in Sources */,
+				32EB60472C0BF226004DB70D /* Binding.swift in Sources */,
+				3291CDF42BFD71E100E4AE83 /* ImageButton.swift in Sources */,
 				3291CDD42BFD546000E4AE83 /* ContasFacilApp.swift in Sources */,
+				32EB60432C0BE3C2004DB70D /* SignUpViewModel.swift in Sources */,
+				3291CDEA2BFD62E000E4AE83 /* BasicTextField.swift in Sources */,
+				3291CDEC2BFD685300E4AE83 /* ActionButton.swift in Sources */,
+				3291CDF62BFD901900E4AE83 /* SignUpView.swift in Sources */,
+				3291CDEE2BFD690200E4AE83 /* LabelledDivider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +358,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,9 +366,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.contasfacil.ContasFacil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,6 +391,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,9 +399,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.contasfacil.ContasFacil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -342,6 +431,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		32D3B01F2C0D7AB100F32B46 /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.34.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		32D3B0202C0D7AB100F32B46 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32D3B01F2C0D7AB100F32B46 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		32D3B0222C0D7AB100F32B46 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32D3B01F2C0D7AB100F32B46 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3291CDC82BFD546000E4AE83 /* Project object */;
 }
