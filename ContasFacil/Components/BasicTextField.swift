@@ -43,9 +43,11 @@ struct BasicTextField: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(title)
-                .font(.system(size: 12, weight: .regular))
-                .foregroundStyle(Color.ui.font)
+            if (!title.isEmpty) {
+                Text(title)
+                    .font(.system(size: 12, weight: .regular))
+                    .foregroundStyle(Color.ui.font)
+            }
             if (isPassword) {
                 SecureField(placeholder, text: text.onChange({ value in
                     if let isErrorSafe = isError {

@@ -5,7 +5,6 @@
 //  Created by Elisson Silva on 01/06/24.
 //
 
-import SwiftUI
 import Foundation
 
 class SignUpViewModel: ObservableObject {
@@ -16,7 +15,13 @@ class SignUpViewModel: ObservableObject {
     
     @Published var nameError: Bool = false
     @Published var emailError: Bool = false
+    @Published var emailErrorMsg: String = ""
     @Published var passwordError: Bool = false
+    
+    @Published var isLoading: Bool = false
+    @Published var signUpStatus: SignUpStatus?
+    @Published var showErrorMessage: Bool = false
+    @Published var errorMessage: String = ""
     
     func isFormValid() -> Bool {
         if (name.isEmpty || email.isEmpty || password.isEmpty || !email.isValidEmail) {
@@ -27,6 +32,7 @@ class SignUpViewModel: ObservableObject {
             
             if (email.isEmpty || !email.isValidEmail) {
                 emailError = true
+                emailErrorMsg = "Por favor, digite um e-mail válido"
             }
             
             if (password.isEmpty) {
@@ -41,12 +47,16 @@ class SignUpViewModel: ObservableObject {
     
     func signUp() {
         if (isFormValid()) {
-            print("Valid Form! Do SignUp")
-        } else {
-            print("Form Not Valid")
+            
+            isLoading = true
+            Task {@MainActor in
+                self.signUpStatus = await CognitoAuth.signUp(name: self.name,
+                                                   password: self.password,
+                                                   email: self.email)
+            }
+            isLoading = false
         }
     }
-    
     
 }
 

@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		328E6AD32C14D21000FBBB0B /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 328E6AD22C14D21000FBBB0B /* amplifyconfiguration.json */; };
+		328E6AD92C14D3A200FBBB0B /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 328E6AD82C14D3A200FBBB0B /* AWSCognitoAuthPlugin */; };
+		328E6ADB2C14D3A200FBBB0B /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 328E6ADA2C14D3A200FBBB0B /* Amplify */; };
+		328E6ADD2C14DD7E00FBBB0B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328E6ADC2C14DD7E00FBBB0B /* HomeView.swift */; };
+		328E6AE22C14E29E00FBBB0B /* LoadingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328E6AE12C14E29E00FBBB0B /* LoadingAnimation.swift */; };
+		328E6AE42C14E58A00FBBB0B /* SignUpConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328E6AE32C14E58A00FBBB0B /* SignUpConfirmationView.swift */; };
+		328E6AE62C150B2F00FBBB0B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328E6AE52C150B2F00FBBB0B /* Router.swift */; };
+		328E6AE82C16759400FBBB0B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328E6AE72C16759400FBBB0B /* LoginViewModel.swift */; };
+		328E6AEB2C1684D700FBBB0B /* CognitoAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328E6AEA2C1684D700FBBB0B /* CognitoAuth.swift */; };
+		328E6AED2C168A7400FBBB0B /* SignUpConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328E6AEC2C168A7400FBBB0B /* SignUpConfirmationViewModel.swift */; };
 		3291CDD42BFD546000E4AE83 /* ContasFacilApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291CDD32BFD546000E4AE83 /* ContasFacilApp.swift */; };
 		3291CDD82BFD546100E4AE83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3291CDD72BFD546100E4AE83 /* Assets.xcassets */; };
 		3291CDDB2BFD546100E4AE83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3291CDDA2BFD546100E4AE83 /* Preview Assets.xcassets */; };
@@ -17,14 +27,20 @@
 		3291CDEE2BFD690200E4AE83 /* LabelledDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291CDED2BFD690200E4AE83 /* LabelledDivider.swift */; };
 		3291CDF42BFD71E100E4AE83 /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291CDF32BFD71E100E4AE83 /* ImageButton.swift */; };
 		3291CDF62BFD901900E4AE83 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291CDF52BFD901900E4AE83 /* SignUpView.swift */; };
-		32D3B0212C0D7AB100F32B46 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 32D3B0202C0D7AB100F32B46 /* AWSCognitoAuthPlugin */; };
-		32D3B0232C0D7AB100F32B46 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 32D3B0222C0D7AB100F32B46 /* Amplify */; };
 		32EB60432C0BE3C2004DB70D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EB60422C0BE3C2004DB70D /* SignUpViewModel.swift */; };
 		32EB60452C0BE803004DB70D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EB60442C0BE803004DB70D /* String.swift */; };
 		32EB60472C0BF226004DB70D /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EB60462C0BF226004DB70D /* Binding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		328E6AD22C14D21000FBBB0B /* amplifyconfiguration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		328E6ADC2C14DD7E00FBBB0B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		328E6AE12C14E29E00FBBB0B /* LoadingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingAnimation.swift; sourceTree = "<group>"; };
+		328E6AE32C14E58A00FBBB0B /* SignUpConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpConfirmationView.swift; sourceTree = "<group>"; };
+		328E6AE52C150B2F00FBBB0B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		328E6AE72C16759400FBBB0B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		328E6AEA2C1684D700FBBB0B /* CognitoAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CognitoAuth.swift; sourceTree = "<group>"; };
+		328E6AEC2C168A7400FBBB0B /* SignUpConfirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpConfirmationViewModel.swift; sourceTree = "<group>"; };
 		3291CDD02BFD546000E4AE83 /* ContasFacil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContasFacil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3291CDD32BFD546000E4AE83 /* ContasFacilApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContasFacilApp.swift; sourceTree = "<group>"; };
 		3291CDD72BFD546100E4AE83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,17 +62,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32D3B0212C0D7AB100F32B46 /* AWSCognitoAuthPlugin in Frameworks */,
-				32D3B0232C0D7AB100F32B46 /* Amplify in Frameworks */,
+				328E6AD92C14D3A200FBBB0B /* AWSCognitoAuthPlugin in Frameworks */,
+				328E6ADB2C14D3A200FBBB0B /* Amplify in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		328E6AE92C1684C200FBBB0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				328E6AEA2C1684D700FBBB0B /* CognitoAuth.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3291CDC72BFD546000E4AE83 = {
 			isa = PBXGroup;
 			children = (
+				328E6AD22C14D21000FBBB0B /* amplifyconfiguration.json */,
 				3291CDD22BFD546000E4AE83 /* ContasFacil */,
 				3291CDD12BFD546000E4AE83 /* Products */,
 			);
@@ -73,6 +98,7 @@
 		3291CDD22BFD546000E4AE83 /* ContasFacil */ = {
 			isa = PBXGroup;
 			children = (
+				328E6AE92C1684C200FBBB0B /* Model */,
 				3291CDE82BFD62C500E4AE83 /* Components */,
 				3291CDE52BFD5CE400E4AE83 /* Extensions */,
 				3291CDE22BFD549600E4AE83 /* ViewModel */,
@@ -80,6 +106,7 @@
 				3291CDD32BFD546000E4AE83 /* ContasFacilApp.swift */,
 				3291CDD72BFD546100E4AE83 /* Assets.xcassets */,
 				3291CDD92BFD546100E4AE83 /* Preview Content */,
+				328E6AE52C150B2F00FBBB0B /* Router.swift */,
 			);
 			path = ContasFacil;
 			sourceTree = "<group>";
@@ -97,6 +124,8 @@
 			children = (
 				3291CDE32BFD54B500E4AE83 /* LoginView.swift */,
 				3291CDF52BFD901900E4AE83 /* SignUpView.swift */,
+				328E6ADC2C14DD7E00FBBB0B /* HomeView.swift */,
+				328E6AE32C14E58A00FBBB0B /* SignUpConfirmationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -105,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				32EB60422C0BE3C2004DB70D /* SignUpViewModel.swift */,
+				328E6AE72C16759400FBBB0B /* LoginViewModel.swift */,
+				328E6AEC2C168A7400FBBB0B /* SignUpConfirmationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -126,6 +157,7 @@
 				3291CDEB2BFD685300E4AE83 /* ActionButton.swift */,
 				3291CDED2BFD690200E4AE83 /* LabelledDivider.swift */,
 				3291CDF32BFD71E100E4AE83 /* ImageButton.swift */,
+				328E6AE12C14E29E00FBBB0B /* LoadingAnimation.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -147,8 +179,8 @@
 			);
 			name = ContasFacil;
 			packageProductDependencies = (
-				32D3B0202C0D7AB100F32B46 /* AWSCognitoAuthPlugin */,
-				32D3B0222C0D7AB100F32B46 /* Amplify */,
+				328E6AD82C14D3A200FBBB0B /* AWSCognitoAuthPlugin */,
+				328E6ADA2C14D3A200FBBB0B /* Amplify */,
 			);
 			productName = ContasFacil;
 			productReference = 3291CDD02BFD546000E4AE83 /* ContasFacil.app */;
@@ -196,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3291CDDB2BFD546100E4AE83 /* Preview Assets.xcassets in Resources */,
+				328E6AD32C14D21000FBBB0B /* amplifyconfiguration.json in Resources */,
 				3291CDD82BFD546100E4AE83 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,15 +241,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				3291CDE42BFD54B500E4AE83 /* LoginView.swift in Sources */,
+				328E6AED2C168A7400FBBB0B /* SignUpConfirmationViewModel.swift in Sources */,
 				3291CDE72BFD5CF400E4AE83 /* Color.swift in Sources */,
 				32EB60452C0BE803004DB70D /* String.swift in Sources */,
 				32EB60472C0BF226004DB70D /* Binding.swift in Sources */,
+				328E6AE82C16759400FBBB0B /* LoginViewModel.swift in Sources */,
 				3291CDF42BFD71E100E4AE83 /* ImageButton.swift in Sources */,
 				3291CDD42BFD546000E4AE83 /* ContasFacilApp.swift in Sources */,
 				32EB60432C0BE3C2004DB70D /* SignUpViewModel.swift in Sources */,
+				328E6AE62C150B2F00FBBB0B /* Router.swift in Sources */,
 				3291CDEA2BFD62E000E4AE83 /* BasicTextField.swift in Sources */,
 				3291CDEC2BFD685300E4AE83 /* ActionButton.swift in Sources */,
+				328E6AE42C14E58A00FBBB0B /* SignUpConfirmationView.swift in Sources */,
+				328E6ADD2C14DD7E00FBBB0B /* HomeView.swift in Sources */,
 				3291CDF62BFD901900E4AE83 /* SignUpView.swift in Sources */,
+				328E6AEB2C1684D700FBBB0B /* CognitoAuth.swift in Sources */,
+				328E6AE22C14E29E00FBBB0B /* LoadingAnimation.swift in Sources */,
 				3291CDEE2BFD690200E4AE83 /* LabelledDivider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,12 +484,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		32D3B0202C0D7AB100F32B46 /* AWSCognitoAuthPlugin */ = {
+		328E6AD82C14D3A200FBBB0B /* AWSCognitoAuthPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 32D3B01F2C0D7AB100F32B46 /* XCRemoteSwiftPackageReference "amplify-swift" */;
 			productName = AWSCognitoAuthPlugin;
 		};
-		32D3B0222C0D7AB100F32B46 /* Amplify */ = {
+		328E6ADA2C14D3A200FBBB0B /* Amplify */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 32D3B01F2C0D7AB100F32B46 /* XCRemoteSwiftPackageReference "amplify-swift" */;
 			productName = Amplify;

@@ -9,9 +9,8 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State var email: String = ""
-    @State var password: String = ""
-    @State var goToSignUp: Int? = 0
+    @EnvironmentObject var router: Router
+    @ObservedObject var viewModel: LoginViewModel = LoginViewModel()
     
     var body: some View {
         VStack(alignment: .leading, spacing: 40) {
@@ -30,27 +29,43 @@ struct LoginView: View {
                     title: "E-mail",
                     placeholder: "Digite seu e-mail",
                     keyboardType: .emailAddress,
-                    text: $email)
+                    text: $viewModel.email,
+                    autocapitalization: .never,
+                    isError: $viewModel.isError,
+                    errorMessage: ""
+                )
                 
                 BasicTextField(
                     title: "Senha",
                     placeholder: "Digite sua senha",
                     isPassword: true,
-                    text: $password)
+                    text: $viewModel.password,
+                    isError: $viewModel.isError,
+                    errorMessage: ""
+                )
+                
+                if ($viewModel.isError.wrappedValue) {
+                    Text($viewModel.errorMessage.wrappedValue)
+                        .font(.system(size: 12, weight: .regular))
+                        .foregroundStyle(Color.ui.error)
+                }
             }
             
             VStack(alignment: .leading, spacing: 15) {
                 
-                ActionButton(buttonText: "Entrar") {
-                    print("Sign In")
+                ActionButton(buttonText: "Entrar", isLoading: $viewModel.isLoading.wrappedValue) {
+                    viewModel.signIn()
                 }
                 
-                NavigationLink(destination: SignUpView()){
-                    Text("Ainda não tem acesso? **Cadastre-se!**")
-                        .frame(height: 46)
-                        .font(.system(size: 16, weight: .regular))
-                        .foregroundStyle(Color.ui.font)
-                }
+                
+                Text("Ainda não tem acesso? **Cadastre-se!**")
+                    .frame(height: 46)
+                    .font(.system(size: 16, weight: .regular))
+                    .foregroundStyle(Color.ui.font)
+                    .onTapGesture {
+                        router.navigate(to: .signup)
+                    }
+                
                 
                 LabelledDivider(label: "ou", color: Color.ui.border)
                 
@@ -79,6 +94,16 @@ struct LoginView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding()
         .accentColor(Color.ui.background)
+        .onChange(of: viewModel.signInStatus) { status in
+            if let safeStatus = status {
+                switch safeStatus {
+                case .confirmationNeeded:
+                    router.navigate(to: .signupconfirmation(email: $viewModel.email.wrappedValue))
+                default:
+                    break
+                }
+            }
+        }
     }
 }
 
