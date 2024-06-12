@@ -80,13 +80,15 @@ struct LoginView: View {
                     ImageButton(btnImage: 
                                     { Image("AppleIcon")
                             .resizable()
-                        .frame(width: 29, height: 35.66) },
+                        .frame(width: 27, height: 33.66) },
                                 width: 58,
-                                height: 58) {
+                                height: 58,
+                                offset: CGSize(width: 0, height: -1)
+                    ) {
                         print("Apple Login")
                     }
                 }
-                .padding([.horizontal], 30)
+                .padding([.horizontal], 40)
             }
             
             Spacer()

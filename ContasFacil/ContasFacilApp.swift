@@ -17,29 +17,28 @@ struct ContasFacilApp: App {
     
     var body: some Scene {
         WindowGroup {
-            
-//            NavigationStack(path: $router.navPath) {
-//                
-//                if (isUserSignedIn) {
-//                    HomeView()
-//                } else {
-//                    LoginView()
-//                    .navigationDestination(for: Router.Destination.self) { destination in
-//                        switch destination {
-//                        case .signup:
-//                            SignUpView()
-//                        case .signupconfirmation(let email):
-//                            SignUpConfirmationView(email: email)
-//                        }
-//                    }
-//                }
-//                   
-//            }
-//            .toolbar(.hidden)
-//            .task {
-//                isUserSignedIn = await fetchCurrentAuthSession()
-//            }
-//            .environmentObject(router)
+            NavigationStack(path: $router.navPath) {
+                
+                if (isUserSignedIn) {
+                    HomeView()
+                } else {
+                    LoginView()
+                    .navigationDestination(for: Router.Destination.self) { destination in
+                        switch destination {
+                        case .signup:
+                            SignUpView()
+                        case .signupconfirmation(let email):
+                            SignUpConfirmationView(email: email)
+                        }
+                    }
+                }
+                   
+            }
+            .toolbar(.hidden)
+            .task {
+                isUserSignedIn = await fetchCurrentAuthSession()
+            }
+            .environmentObject(router)
         }
     }
     

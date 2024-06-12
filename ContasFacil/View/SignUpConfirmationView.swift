@@ -14,16 +14,24 @@ struct SignUpConfirmationView: View {
     var email: String
     
     var body: some View {
-        VStack(alignment: .center, spacing: 20) {
-            Text("Verifique o seu e-mail")
-                .font(.system(size: 20, weight: .semibold))
-                .foregroundStyle(Color.ui.font)
+        VStack(alignment: .leading, spacing: 20) {
+           
+            VStack(alignment: .leading, spacing: 25) {
+                
+                BackButton(isToRoot: true)
+                
+                Text("Verifique o seu e-mail")
+                    .font(.system(size: 20, weight: .semibold))
+                    .foregroundStyle(Color.ui.font)
+                
+                
+            }
             Text("Informe o código que enviamos para seu e-mail")
                 .font(.system(size: 12, weight: .regular))
                 .foregroundStyle(Color.ui.font)
 
-            ZStack(alignment: Alignment(horizontal: .center, vertical: .center)) {
-                VStack(spacing: 25) {
+            
+                VStack(alignment: .leading, spacing: 25) {
                     
                     BasicTextField(
                         title:  "",
@@ -39,19 +47,14 @@ struct SignUpConfirmationView: View {
                         .font(.system(size: 12, weight: .regular))
                         .foregroundStyle(Color.ui.font)
                         .onTapGesture {
-                            Task { @MainActor in
-                                
-                            }
+                            viewModel.resendCode(for: self.email)
                         }
                     
                     ActionButton(buttonText: "Confirmar") {
                         print("Sending")
                     }
                 }
-            }
-            .padding([.horizontal], 30)
-            
-            
+            Spacer()
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding()

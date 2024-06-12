@@ -14,18 +14,13 @@ struct SignUpView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 40) {
-            ZStack {
-                HStack {
-                    ImageButton(btnImage: { Image("BackIcon") }, hasBorder: false) {
-                        router.navigateBack()
-                    }
-                    Spacer()
-                }
-                HStack {
-                    Text("Crie sua conta")
-                        .font(.system(size: 20, weight: .semibold))
-                        .foregroundStyle(Color.ui.font)
-                }
+            VStack(alignment: .leading, spacing: 25) {
+                
+                BackButton()
+                
+                Text("Crie sua conta")
+                    .font(.system(size: 20, weight: .semibold))
+                    .foregroundStyle(Color.ui.font)
             }
             VStack(alignment: .leading, spacing: 20) {
                 BasicTextField(
